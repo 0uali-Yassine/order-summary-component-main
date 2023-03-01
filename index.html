@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Order summary card</title>
+  <style type="text/tailwindcss">
+    @layer base {
+      main{
+       font-family: 'Red Hat Display', sans-serif;
+      }
+    }
+  </style>
+
+  
+</head>
+<body class="bg-[url('/images/pattern-background-desktop.svg')] bg-no-repeat bg-cover max-[537px]:bg-cover max-[537px]:bg-no-repeat max-[537px]:bg-[url('/images/pattern-background-mobile.svg')]">
+  <main class="w-[370px] h-[550px] border-2 rounded-3xl bg-white mt-[50px] m-auto flex flex-col  overflow-hidden max-[407px]:w-full">
+    <div class="image bg-[url('/images/illustration-hero.svg')] bg-cover bg-no-repeat w-full h-[187px]"></div>
+    <div class=" flex flex-col justify-around pt-7 h-[60%]">
+      <h1 class="text-[#1f2f56] text-[25px] font-black text-center">Order Summary</h1>
+      <p class="text-[#7380a6] text-center ">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+
+      <div class="price borde bg-[#7380a620]  w-[300px] h-[77px] m-auto rounded-lg flex justify-between items-center p-[17px]">
+        <div class="flex justify-between  w-[148px]">
+          <div class="icon bg-[url('/images/icon-music.svg')] bg-cover bg-no-repeat w-[50px] h-[50px]"></div>
+          <div class="flex flex-col">
+            <h1 class="text-[#1f2f56] ">Annual Plan</h1>
+            <h1 class="text-[#7380a6]">$59.99/year</h1>
+          </div>
+        </div>
+        <a href="#" class="text-[#3829e0] underline hover:no-underline hover:text-[#3829e070]" >Change</a>
+      </div>
+
+      <button class="bg-[#3829e0] text-white text-[13px] w-[300px] h-[40px] rounded-lg shadow-lg shadow-[#3829e020] m-auto hover:bg-[#3829e070]">Proceed to Payment</button>
+      <a href="#" class="text-center text-[13px] text-[#7380a6] hover:text-black m-auto mt-[10px] ">Cancel Order</a>
+    </div>
+  </main>
+  
+</body>
+</html>
